@@ -1,0 +1,4 @@
+repository "Sniper Game@SniperGame@cloud"
+  path "/"
+    br "/main"
+    co "/main"
