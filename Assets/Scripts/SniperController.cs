@@ -15,7 +15,6 @@ public class SniperController : MonoBehaviour
     public int Ammo;
     public GameObject bulletImpactPrefab;
 
-
     float rotationX = 0;
     float rotationY = 0;
 
@@ -92,7 +91,7 @@ public class SniperController : MonoBehaviour
             playerCamera.fieldOfView = 60;
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && Ammo != 5)
         {
             Ammo = 5;
             Debug.Log("RELOADED!");
