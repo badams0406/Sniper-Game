@@ -11,7 +11,7 @@ public class Menu : MonoBehaviour
     }
     public void onLevelSelectButton()
     {
-
+        SceneManager.LoadScene(5);
     }
     public void onUpgradeButton()
     {
@@ -29,5 +29,18 @@ public class Menu : MonoBehaviour
     public void onBackButton()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void onLevel1Button()
+    {
+        SceneManager.LoadScene(1);
+    }
+    public void onLevel2Button()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void onLevel3Button()
+    {
+        SceneManager.LoadScene(3);
     }
 }
