@@ -368,7 +368,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 107,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.UnityAdditionalFile.txt"
@@ -394,7 +394,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 44994,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.TestRunner.rsp2"
@@ -2426,7 +2426,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 52596,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.UnityAdditionalFile.txt"
@@ -2452,7 +2452,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 91668,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.rsp2"
@@ -3069,7 +3069,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 99635,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.UnityAdditionalFile.txt"
@@ -3095,7 +3095,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 150631,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.TestRunner.rsp2"
@@ -3760,7 +3760,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 158399,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.UnityAdditionalFile.txt"
@@ -3786,7 +3786,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 194565,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.rsp2"
@@ -4350,7 +4350,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 202865,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.UnityAdditionalFile.txt"
@@ -4376,7 +4376,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 236480,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.rsp2"
@@ -4893,7 +4893,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 244883,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.UnityAdditionalFile.txt"
@@ -4919,7 +4919,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 281295,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.rsp2"
@@ -5447,7 +5447,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 289697,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.UnityAdditionalFile.txt"
@@ -5473,7 +5473,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 327634,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.rsp2"
@@ -6010,7 +6010,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 335763,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.UnityAdditionalFile.txt"
@@ -6036,7 +6036,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 371865,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.rsp2"
@@ -6556,7 +6556,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 379872,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.UnityAdditionalFile.txt"
@@ -6582,7 +6582,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 414187,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Settings.Editor.rsp2"
@@ -7090,7 +7090,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 422592,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.UnityAdditionalFile.txt"
@@ -7116,7 +7116,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 457728,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.rsp2"
@@ -7626,7 +7626,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 466173,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.UnityAdditionalFile.txt"
@@ -7652,7 +7652,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 500102,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.rsp2"
@@ -8151,7 +8151,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 508513,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.UnityAdditionalFile.txt"
@@ -8177,7 +8177,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 545679,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.rsp2"
@@ -8716,7 +8716,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 553793,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.UnityAdditionalFile.txt"
@@ -8742,7 +8742,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 592037,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.rsp2"
@@ -9295,7 +9295,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 600153,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.UnityAdditionalFile.txt"
@@ -9321,7 +9321,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 634113,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.rsp2"
@@ -9824,7 +9824,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 642491,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.UnityAdditionalFile.txt"
@@ -9850,7 +9850,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 728481,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.rsp2"
@@ -10758,7 +10758,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 736615,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.UnityAdditionalFile.txt"
@@ -10784,7 +10784,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 772607,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualStudio.Editor.rsp2"
@@ -11305,7 +11305,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 780627,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.UnityAdditionalFile.txt"
@@ -11331,7 +11331,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 817696,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.rsp2"
@@ -11883,7 +11883,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 826181,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.UnityAdditionalFile.txt"
@@ -11909,7 +11909,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 864163,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TestTools.CodeCoverage.Editor.rsp2"
@@ -12506,7 +12506,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 872509,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.UnityAdditionalFile.txt"
@@ -12532,7 +12532,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 910273,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.TextMeshPro.Editor.rsp2"
@@ -13097,7 +13097,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 918730,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.UnityAdditionalFile.txt"
@@ -13123,7 +13123,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 976328,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.Timeline.Editor.rsp2"
@@ -13912,7 +13912,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 984791,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.UnityAdditionalFile.txt"
@@ -13938,7 +13938,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1075078,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Core.Editor.rsp2"
@@ -14925,7 +14925,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1083558,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.UnityAdditionalFile.txt"
@@ -14951,7 +14951,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1164958,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.rsp2"
@@ -15837,7 +15837,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1173188,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.UnityAdditionalFile.txt"
@@ -15863,7 +15863,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1227034,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Flow.Editor.rsp2"
@@ -16575,7 +16575,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1235698,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.UnityAdditionalFile.txt"
@@ -16601,7 +16601,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1271104,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.rsp2"
@@ -17120,7 +17120,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1279435,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.UnityAdditionalFile.txt"
@@ -17146,7 +17146,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1314353,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.SettingsProvider.Editor.rsp2"
@@ -17707,7 +17707,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1323220,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.UnityAdditionalFile.txt"
@@ -17733,7 +17733,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1364943,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.State.Editor.rsp2"
@@ -18316,7 +18316,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1373800,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.UnityAdditionalFile.txt"
@@ -18342,7 +18342,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1407671,
       "PayloadLength": 39,
-      "PayloadDebugContentSnippet": "/pathmap:\"E:\\Unity Stuff\\Snipe",
+      "PayloadDebugContentSnippet": "/pathmap:\"D:\\Unity Stuff\\Snipe",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Unity.VisualScripting.Shared.Editor.rsp2"
@@ -18880,7 +18880,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1416605,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.UnityAdditionalFile.txt"
@@ -19668,7 +19668,7 @@
       "ActionType": "WriteFile",
       "PayloadOffset": 1459881,
       "PayloadLength": 26,
-      "PayloadDebugContentSnippet": "E:\\Unity Stuff\\Sniper-Game",
+      "PayloadDebugContentSnippet": "D:\\Unity Stuff\\Sniper-Game",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt"
@@ -21146,7 +21146,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.Postprocessing.Runtime.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"E:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"E:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\" -s=\"E:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"E:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\" -s=\"E:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.Postprocessing.Runtime.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"D:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.8f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"D:\\Unity Stuff\\Sniper-Game\\Library\\ScriptAssemblies\" -s=\"D:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"D:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.4\\lib\\ReportGenerator\" -s=\"D:\\Unity Stuff\\Sniper-Game\\Library\\PackageCache\\com.unity.visualscripting@1.9.0\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/2022.3.8f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -21434,6 +21434,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aE.dag.json",
-  "PayloadsFile": "E:/Unity Stuff/Sniper-Game/Library/Bee/1900b0aE.dag.payloads",
+  "PayloadsFile": "D:/Unity Stuff/Sniper-Game/Library/Bee/1900b0aE.dag.payloads",
   "RelativePathToRoot": "../.."
 }
