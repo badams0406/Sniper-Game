@@ -19,7 +19,7 @@ public class Menu : MonoBehaviour
     }
     public void onOptionsButton()
     {
-
+        SceneManager.LoadScene(6);
     }
     public void onQuitButton()
     {
