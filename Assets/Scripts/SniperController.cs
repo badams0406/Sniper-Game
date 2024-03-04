@@ -71,6 +71,7 @@ public class SniperController : MonoBehaviour
                             {
                                 // If the ray doesn't hit an enemy, instantiate a bullet impact effect
                                 Instantiate(bulletImpactPrefab, hit.point, Quaternion.identity);
+                                
                             }
                         }
                     }
