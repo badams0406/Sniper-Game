@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SniperController : MonoBehaviour
 {
+    public AudioSource sniper_shot;
     public Camera playerCamera;
-    public float lookSpeed = 2f;
-    public float lookXLimiter = 45f;
     public GameObject idleGun;
     public GameObject readyGun;
-    public float aimTimer = 0.4f;
     public GameObject scope;
-    public AudioSource sniper_shot;
-    public int Ammo;
     public GameObject bulletImpactPrefab;
 
+    public Image[] UIBullets;
+
+    public float lookSpeed = 2f;
+    public float lookXLimiter = 45f;
+    public float aimTimer = 0.4f;
+    public int ammo;
     float rotationX = 0;
     float rotationY = 0;
 
@@ -25,7 +29,9 @@ public class SniperController : MonoBehaviour
         idleGun.SetActive(true);
         readyGun.SetActive(false);
         scope.SetActive(false);
-        Ammo = 5;
+        ammo = 5;
+        sniper_shot.volume = 0.2f;  //0.2f should be 100%
+        resetBulletCountUI();
 
     }
 
@@ -56,12 +62,13 @@ public class SniperController : MonoBehaviour
                 playerCamera.fieldOfView = 20;
                 if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit))
                 {
-                    if (Ammo >= 1)
+                    if (ammo >= 1)
                     {
                         if (Input.GetKeyDown(KeyCode.Mouse0))
                         {
                             sniper_shot.Play();
-                            Ammo -= 1;
+                            ammo -= 1;
+                            UIBullets[ammo].enabled = false;
                             if (hit.transform.gameObject.tag == "Enemy")
                             {
                                 // If the ray hits an enemy, decrease its health
@@ -75,7 +82,7 @@ public class SniperController : MonoBehaviour
                             }
                         }
                     }
-                    if (Ammo <= 0)
+                    if (ammo <= 0)
                     {
                         Debug.Log("OUT OF AMMO!");
                     }
@@ -92,10 +99,18 @@ public class SniperController : MonoBehaviour
             playerCamera.fieldOfView = 60;
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && Ammo != 5)
+        if (Input.GetKeyDown(KeyCode.R) && ammo != 5)
         {
-            Ammo = 5;
+            ammo = 5;
+            resetBulletCountUI();
             Debug.Log("RELOADED!");
         }
     }
+
+    public void resetBulletCountUI(){
+        for(int i = 0; i < ammo; i++){
+            UIBullets[i].enabled = true;
+        }
+    }
+
 }

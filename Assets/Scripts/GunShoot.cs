@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Random = UnityEngine.Random;
+using TMPro;
 
 public class GunShoot : MonoBehaviour {
 
