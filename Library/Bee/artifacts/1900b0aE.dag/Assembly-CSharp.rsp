@@ -109,6 +109,7 @@
 -define:ENABLE_UNITY_COLLECTIONS_CHECKS
 -define:ENABLE_BURST_AOT
 -define:UNITY_TEAM_LICENSE
+-define:UNITY_PRO_LICENSE
 -define:ENABLE_CUSTOM_RENDER_TEXTURE
 -define:ENABLE_DIRECTOR
 -define:ENABLE_LOCALIZATION
@@ -357,6 +358,7 @@
 "Assets/Scripts/Enemy.cs"
 "Assets/Scripts/GunShoot.cs"
 "Assets/Scripts/Menu.cs"
+"Assets/Scripts/MoneyHUD.cs"
 "Assets/Scripts/shoot.cs"
 "Assets/Scripts/SniperController.cs"
 "Assets/Scripts/Sniper_Bullet.cs"

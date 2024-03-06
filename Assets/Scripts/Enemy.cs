@@ -4,11 +4,17 @@ public class EnemyController : MonoBehaviour
 {
     public int maxHealth = 100; // Maximum health of the enemy
     public int currentHealth; // Current health of the enemy
+    public MoneyHUD MoneyHUD;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth; // Set current health to max health when the enemy starts
+        if (MoneyHUD == null)
+        {
+            // Try to find the MoneyHUD component in the scene if not assigned
+            MoneyHUD = FindObjectOfType<MoneyHUD>();
+        }
     }
 
     public void Update()
@@ -29,6 +35,15 @@ public class EnemyController : MonoBehaviour
     void Die()
     {
         Destroy(gameObject); // Destroy the enemy GameObject
+        // Add $500 to the total balance
+        if (MoneyHUD != null)
+        {
+            MoneyHUD.Balance += 500;
+        }
+        else
+        {
+            Debug.LogWarning("MoneyHUD reference is not set. Make sure to assign it in the Inspector or ensure it exists in the scene.");
+        }
     }
 
     // Method to handle collision with other GameObjects
