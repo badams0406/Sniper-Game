@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Target
   - Enemy
+  - Pedestrian
+  - Bomb
   layers:
   - Default
   - TransparentFX

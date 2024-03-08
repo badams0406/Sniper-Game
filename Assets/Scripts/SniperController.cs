@@ -66,6 +66,8 @@ public class SniperController : MonoBehaviour
                     {
                         if (Input.GetKeyDown(KeyCode.Mouse0))
                         {
+                            Debug.Log(hit.transform.gameObject.name);
+                            
                             sniper_shot.Play();
                             ammo -= 1;
                             UIBullets[ammo].enabled = false;
@@ -73,6 +75,14 @@ public class SniperController : MonoBehaviour
                             {
                                 // If the ray hits an enemy, decrease its health
                                 hit.transform.gameObject.GetComponent<EnemyController>().currentHealth -= 100;
+                            }
+                            else if (hit.transform.gameObject.tag == "Pedestrian")
+                            {
+                                hit.transform.gameObject.GetComponent<Pedestrian>().onHit();
+                            }
+                            else if (hit.transform.gameObject.tag == "Bomb")
+                            {
+                                hit.transform.gameObject.GetComponent<Bomb>().Explode();
                             }
                             else
                             {
