@@ -25,7 +25,7 @@ public class Bomb : MonoBehaviour
 
         // gameObject.MeshRenderer.enabled = false;
         GetComponent<Renderer>().enabled = false;
-        // Destroy(gameObject);
+        GetComponent<Collider>().enabled = false;
 
         // Get all objects within the blast radius
         Collider[] objectsInBlastRadius = Physics.OverlapSphere(transform.position, blastRadius.radius);
