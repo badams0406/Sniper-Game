@@ -75,3 +75,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
+Library/ArtifactDB
+Library/Bee/fullprofile.json
+Library/SourceAssetDB
+UserSettings/Layouts/default-2022.dwlt
