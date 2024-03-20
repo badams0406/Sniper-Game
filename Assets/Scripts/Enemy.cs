@@ -60,10 +60,6 @@ public class EnemyController : MonoBehaviour
         {
             MoneyHUD.Balance += 500;
         }
-        else
-        {
-            Debug.LogWarning("MoneyHUD reference is not set. Make sure to assign it in the Inspector or ensure it exists in the scene.");
-        }
     }
 
     // Method to handle collision with other GameObjects
@@ -83,26 +79,33 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    Vector3 findRandomFloorPositionInRoom (BoxCollider[] rooms, float y) {
+    Vector3 findRandomFloorPositionInRoom(BoxCollider[] rooms, float y)
+    {
+        if (rooms != null && rooms.Length > 0) // Check if rooms array is not null and has elements
+        {
+            BoxCollider room = rooms[Random.Range(0, rooms.Length)];
 
-        BoxCollider room = rooms[Random.Range(0, rooms.Length)];
+            Vector3 pos = room.transform.position;
+            Vector3 size = room.size;
 
-        Vector3 pos = room.transform.position;
-        Vector3 size = room.GetComponent<BoxCollider>().size;
+            Vector3 newPos = new Vector3(
+                Random.Range(pos.x - size.x / 2, pos.x + size.x / 2),
+                y,
+                Random.Range(pos.z - size.z / 2, pos.z + size.z / 2)
+            );
 
-        Vector3 newPos = new Vector3(
-            Random.Range(pos.x - size.x / 2, pos.x + size.x / 2), 
-            y, 
-            Random.Range(pos.z - size.z / 2, pos.z + size.z / 2)
-        );
+            transform.LookAt(newPos);
+            gameObject.transform.eulerAngles = new Vector3(
+                -90,
+                gameObject.transform.eulerAngles.y,
+                gameObject.transform.eulerAngles.z
+            );
 
-        transform.LookAt(newPos);
-        gameObject.transform.eulerAngles = new Vector3(
-            -90,
-            gameObject.transform.eulerAngles.y,
-            gameObject.transform.eulerAngles.z
-        );
-
-        return newPos;
+            return newPos;
+        }
+        else
+        {
+            return Vector3.zero; // Return a default position
+        }
     }
 }
