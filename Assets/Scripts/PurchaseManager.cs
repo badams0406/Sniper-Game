@@ -7,7 +7,6 @@ public static class PurchaseManagerStatic
     public static bool extendedMagPurchased = false;
     public static bool laserSightPurchased = false;
 }
-
 public class PurchaseManager : MonoBehaviour
 {
     public Button suppressorButton;
@@ -27,18 +26,18 @@ public class PurchaseManager : MonoBehaviour
 
         // Update button visibility based on previous purchases
         suppressorButton.gameObject.SetActive(!PurchaseManagerStatic.suppressorPurchased);
-        extendedMagButton.gameObject.SetActive(!PurchaseManagerStatic.extendedMagPurchased);
-        laserSightButton.gameObject.SetActive(!PurchaseManagerStatic.laserSightPurchased);
+        suppressorButton.gameObject.SetActive(!PurchaseManagerStatic.extendedMagPurchased);
+        suppressorButton.gameObject.SetActive(!PurchaseManagerStatic.laserSightPurchased);
 
         // Add onClick events to the buttons
         suppressorButton.onClick.AddListener(BuySuppressor);
-        extendedMagButton.onClick.AddListener(BuyExtendedMag);
-        laserSightButton.onClick.AddListener(BuyLaserSight);
+        suppressorButton.onClick.AddListener(BuyExtendedMag);
+        suppressorButton.onClick.AddListener(BuyLaserSight);
     }
 
     void BuySuppressor()
     {
-        int suppressorCost = 50; // Set suppressor cost
+        int suppressorCost = 2000; // Set suppressor cost
         if (!PurchaseManagerStatic.suppressorPurchased && moneyHUD.Balance >= suppressorCost)
         {
             moneyHUD.Balance -= suppressorCost;
@@ -46,6 +45,7 @@ public class PurchaseManager : MonoBehaviour
             Debug.Log("Suppressor purchased!");
             PurchaseManagerStatic.suppressorPurchased = true;
             suppressorButton.gameObject.SetActive(false);
+
         }
         else if (PurchaseManagerStatic.suppressorPurchased)
         {
@@ -57,9 +57,9 @@ public class PurchaseManager : MonoBehaviour
         }
     }
 
-    void BuyExtendedMag()
+void BuyExtendedMag()
     {
-        int extendedMagCost = 30; // Set extended mag cost
+        int extendedMagCost = 4000; // Set extended mag cost
         if (!PurchaseManagerStatic.extendedMagPurchased && moneyHUD.Balance >= extendedMagCost)
         {
             moneyHUD.Balance -= extendedMagCost;
@@ -80,7 +80,7 @@ public class PurchaseManager : MonoBehaviour
 
     void BuyLaserSight()
     {
-        int laserSightCost = 20; // Set laser sight cost
+        int laserSightCost = 2000; // Set laser sight cost
         if (!PurchaseManagerStatic.laserSightPurchased && moneyHUD.Balance >= laserSightCost)
         {
             moneyHUD.Balance -= laserSightCost;

@@ -1538,6 +1538,7 @@ RectTransform:
   - {fileID: 1382115724}
   - {fileID: 1626193713}
   - {fileID: 1219769172}
+  - {fileID: 1952734402}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3416,7 +3417,6 @@ RectTransform:
   - {fileID: 1306003345}
   - {fileID: 1589420501}
   - {fileID: 1908589739}
-  - {fileID: 1952734402}
   m_Father: {fileID: 754780999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3524,7 +3524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1394970891}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1952734404}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: BuySuppressor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1394970891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5401,6 +5413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1952734402}
   - component: {fileID: 1952734403}
+  - component: {fileID: 1952734404}
   m_Layer: 0
   m_Name: BuyGameObject
   m_TagString: Untagged
@@ -5421,7 +5434,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1382115724}
+  m_Father: {fileID: 754780999}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1952734403
 MonoBehaviour:
@@ -5430,7 +5443,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1952734401}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5072cb5259fbb254ba7b2a898902769a, type: 3}
   m_Name: 
@@ -5438,6 +5451,26 @@ MonoBehaviour:
   suppressorButton: {fileID: 1394970890}
   extendedMagButton: {fileID: 1589420498}
   laserSightButton: {fileID: 1110887971}
+--- !u!114 &1952734404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1952734401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db827e8abf9cbcf488a2c20b72d2be4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boughtSuppressor1: 0
+  boughtExtendedMag1: 0
+  boughtLaserAttach1: 0
+  timer: 10
+  moneyHUD: {fileID: 91311610}
+  suppressorButton: {fileID: 1394970890}
+  extendedMagButton: {fileID: 1110887971}
+  laserSightButton: {fileID: 1589420498}
 --- !u!1 &1976339967
 GameObject:
   m_ObjectHideFlags: 0
@@ -5582,6 +5615,7 @@ GameObject:
   - component: {fileID: 1977792578}
   - component: {fileID: 1977792577}
   - component: {fileID: 1977792576}
+  - component: {fileID: 1977792579}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5663,6 +5697,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1977792579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977792575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db827e8abf9cbcf488a2c20b72d2be4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boughtSuppressor1: 0
+  boughtExtendedMag1: 0
+  boughtLaserAttach1: 0
+  timer: 10
+  moneyHUD: {fileID: 0}
+  suppressorButton: {fileID: 0}
+  extendedMagButton: {fileID: 0}
+  laserSightButton: {fileID: 0}
 --- !u!1 &1991186121
 GameObject:
   m_ObjectHideFlags: 0
