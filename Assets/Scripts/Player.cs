@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
     }
     public void BuySuppressor()
     {
-        int suppressorCost = 6000; // Set suppressor cost
+        int suppressorCost = 2000; // Set suppressor cost
         if (!PurchaseManagerStatic.suppressorPurchased && moneyHUD.Balance >= suppressorCost)
         {
             moneyHUD.Balance -= suppressorCost;
@@ -114,6 +114,8 @@ public class Player : MonoBehaviour
             Debug.Log("Extended Mag purchased!");
             PurchaseManagerStatic.extendedMagPurchased = true;
             extendedMagButton.gameObject.SetActive(false);
+            boughtExtendedMag1 = true;
+            SavePlayer();
         }
         else if (PurchaseManagerStatic.extendedMagPurchased)
         {
@@ -135,6 +137,8 @@ public class Player : MonoBehaviour
             Debug.Log("Laser Sight purchased!");
             PurchaseManagerStatic.laserSightPurchased = true;
             laserSightButton.gameObject.SetActive(false);
+            boughtLaserAttach1 = true;
+            SavePlayer();
         }
         else if (PurchaseManagerStatic.laserSightPurchased)
         {
