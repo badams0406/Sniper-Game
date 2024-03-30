@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
             MoneyHUD = FindObjectOfType<MoneyHUD>();
         }
         
-        krabsWalk.Play();
+        //krabsWalk.Play();
     }
 
     public void Update()

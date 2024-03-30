@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class SniperController : MonoBehaviour
 {
@@ -13,7 +14,10 @@ public class SniperController : MonoBehaviour
     public GameObject scope;
     public GameObject bulletImpactPrefab;
 
-    public Image[] UIBullets;
+    public UnityEngine.UI.Image[] UIBullets;
+
+    public bool Suppre;
+    public bool Extendo;
 
     public float lookSpeed = 2f;
     public float lookXLimiter = 45f;
@@ -21,28 +25,46 @@ public class SniperController : MonoBehaviour
     public int ammo;
     float rotationX = 0;
     float rotationY = 0;
-
-    void Start()
+    public void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        LoadPlayer();
+        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+        UnityEngine.Cursor.visible = false;
         idleGun.SetActive(true);
         readyGun.SetActive(false);
         scope.SetActive(false);
-        ammo = 5;
         sniper_shot.volume = 0.2f;  //0.2f should be 100%
+        if (Extendo == false)
+        {
+            ammo = 5;
+            System.Array.Resize(ref UIBullets, 5);
+            for (int i = 0; i < UIBullets.Length; i++) // Show 5 UI Bullets
+            {
+                UIBullets[i].gameObject.SetActive(true);
+            }
+        }
+        else
+        {
+            ammo = 10;
+            for (int i = 0; i < UIBullets.Length; i++) // Show 10 UI Bullets
+            {
+                UIBullets[i].gameObject.SetActive(true);
+            }
+        }
+        if (Suppre == true)
+        {
+            sniper_shot.volume = 0.025f; // Gun sounds quieter after buying suppressor
+        }
         resetBulletCountUI();
-
     }
 
-    void Update()
+    public void Update()
     {
         // Character Rotation/Character Movement
         rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
         rotationY += Input.GetAxis("Mouse X") * lookSpeed;
 
         rotationX = Mathf.Clamp(rotationX, -lookXLimiter, lookXLimiter);
-
         playerCamera.transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0);
         gunFunction();
     }
@@ -109,17 +131,38 @@ public class SniperController : MonoBehaviour
             playerCamera.fieldOfView = 60;
         }
 
-        if (Input.GetKeyDown(KeyCode.R) && ammo != 5)
+        if (Input.GetKeyDown(KeyCode.R) && ammo != 5 && Extendo == false)
         {
             ammo = 5;
             resetBulletCountUI();
-            Debug.Log("RELOADED!");
+            Debug.Log("RELOADED(5)!");
+        }
+        if (Input.GetKeyDown(KeyCode.R) && ammo != 10 && Extendo == true)
+        {
+            ammo = 10;
+            resetBulletCountUI();
+            Debug.Log("RELOADED(10)!");
         }
     }
 
     public void resetBulletCountUI(){
+        int ammo = Extendo ? 10 : 5;
         for(int i = 0; i < ammo; i++){
             UIBullets[i].enabled = true;
+        }
+    }
+
+    public void LoadPlayer()
+    {
+        PlayerData data = SaveSystem.LoadPlayer();
+        if (data != null)
+        {
+            Suppre = data.boughtSuppressor;
+            Extendo = data.boughtExtendedMag;
+        }
+        else
+        {
+            Debug.Log("Player data not found or could not be loaded. (IGNORE THIS)");
         }
     }
 

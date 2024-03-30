@@ -27,9 +27,16 @@ public class Player : MonoBehaviour
     public void LoadPlayer()
     {
         PlayerData data = SaveSystem.LoadPlayer();
-        boughtSuppressor1 = data.boughtSuppressor;
-        boughtExtendedMag1 = data.boughtExtendedMag;
-        boughtLaserAttach1 = data.boughtLaserAttach;
+        if (data != null)
+        {
+            boughtSuppressor1 = data.boughtSuppressor;
+            boughtExtendedMag1 = data.boughtExtendedMag;
+            boughtLaserAttach1 = data.boughtLaserAttach;
+        }
+        else
+        {
+            Debug.Log("Player data not found or could not be loaded. (IGNORE THIS)");
+        }
     }
     public void Start()
     {
@@ -83,14 +90,14 @@ public class Player : MonoBehaviour
     }
     public void BuySuppressor()
     {
-        int suppressorCost = 2000; // Set suppressor cost
+        int suppressorCost = 6000; // Set suppressor cost
         if (!PurchaseManagerStatic.suppressorPurchased && moneyHUD.Balance >= suppressorCost)
         {
             moneyHUD.Balance -= suppressorCost;
             // Perform actions for purchasing suppressor
             Debug.Log("Suppressor purchased!");
             PurchaseManagerStatic.suppressorPurchased = true;
-            suppressorButton.gameObject.SetActive(false);
+            suppressorButton.gameObject.SetActive(false); // hide button
             boughtSuppressor1 = true;
             SavePlayer();
         }
@@ -113,7 +120,7 @@ public class Player : MonoBehaviour
             // Perform actions for purchasing extended mag
             Debug.Log("Extended Mag purchased!");
             PurchaseManagerStatic.extendedMagPurchased = true;
-            extendedMagButton.gameObject.SetActive(false);
+            extendedMagButton.gameObject.SetActive(false); // hide button
             boughtExtendedMag1 = true;
             SavePlayer();
         }
@@ -136,7 +143,7 @@ public class Player : MonoBehaviour
             // Perform actions for purchasing laser sight
             Debug.Log("Laser Sight purchased!");
             PurchaseManagerStatic.laserSightPurchased = true;
-            laserSightButton.gameObject.SetActive(false);
+            laserSightButton.gameObject.SetActive(false); // hide button
             boughtLaserAttach1 = true;
             SavePlayer();
         }
