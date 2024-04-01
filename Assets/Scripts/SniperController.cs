@@ -4,6 +4,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using UnityEngine.ParticleSystemJobs;
+using Unity.VisualScripting;
 
 public class SniperController : MonoBehaviour
 {
@@ -18,6 +20,7 @@ public class SniperController : MonoBehaviour
 
     public bool Suppre;
     public bool Extendo;
+    public bool Laser;
 
     public float lookSpeed = 2f;
     public float lookXLimiter = 45f;
@@ -25,6 +28,8 @@ public class SniperController : MonoBehaviour
     public int ammo;
     float rotationX = 0;
     float rotationY = 0;
+    // public GameObject Line; 
+    public LineRenderer leLine;
     public void Start()
     {
         LoadPlayer();
@@ -54,6 +59,22 @@ public class SniperController : MonoBehaviour
         if (Suppre == true)
         {
             sniper_shot.volume = 0.025f; // Gun sounds quieter after buying suppressor
+        }
+        if (leLine != null)
+        {
+            if (Laser == true)
+            {
+                //leLine.enabled = true;
+                leLine.gameObject.SetActive(true);
+            }
+            else
+            {
+                leLine.gameObject.SetActive(false);
+            }
+        }
+        else
+        {
+            Debug.LogError("LineRenderer (leLine) is not assigned. Please assign it in the Inspector.");
         }
         resetBulletCountUI();
     }
@@ -159,6 +180,7 @@ public class SniperController : MonoBehaviour
         {
             Suppre = data.boughtSuppressor;
             Extendo = data.boughtExtendedMag;
+            Laser = data.boughtLaserAttach;
         }
         else
         {
