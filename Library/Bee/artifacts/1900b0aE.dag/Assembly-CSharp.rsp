@@ -366,6 +366,7 @@
 "Assets/Scripts/PlayerData.cs"
 "Assets/Scripts/PurchaseManager.cs"
 "Assets/Scripts/SaveSystem.cs"
+"Assets/Scripts/SettingsMenu.cs"
 "Assets/Scripts/shoot.cs"
 "Assets/Scripts/SniperController.cs"
 "Assets/Scripts/Sniper_Bullet.cs"
