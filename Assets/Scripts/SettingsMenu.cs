@@ -2,13 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using TMPro;
+using UnityEngine.UIElements;
+using UnityEngine.UI;
 
-public class SettingsMenu : MonoBehaviour
+public class AudioScript : MonoBehaviour
 {
-    public AudioMixer audioMixer;
-    public void SetVolume (float volume)
+
+    public AudioMixer masterMixer;
+    public void SetSound(float soundLevel)
     {
-        Debug.Log(volume);
-        audioMixer.SetFloat("Volume", volume);
+        masterMixer.SetFloat("MusicVolume", soundLevel);
     }
 }
