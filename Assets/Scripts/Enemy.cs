@@ -6,7 +6,8 @@ public class EnemyController : MonoBehaviour
     public int currentHealth; // Current health of the enemy
     public MoneyHUD MoneyHUD;
     public BoxCollider[] rooms;
-    public AudioSource krabsWalk;
+    public UIController uiController;
+    //public AudioSource krabsWalk;
 
     Vector3 destination;
 
@@ -23,7 +24,11 @@ public class EnemyController : MonoBehaviour
             // Try to find the MoneyHUD component in the scene if not assigned
             MoneyHUD = FindObjectOfType<MoneyHUD>();
         }
-        
+        if (uiController == null)
+        {
+            uiController = FindObjectOfType<UIController>();
+        }
+
         //krabsWalk.Play();
     }
 
@@ -36,7 +41,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, destination, 0.1f);
+            transform.position = Vector3.MoveTowards(transform.position, destination, 0.015f);
         }
 
         TakeDamage();
@@ -59,6 +64,10 @@ public class EnemyController : MonoBehaviour
         if (MoneyHUD != null)
         {
             MoneyHUD.Balance += 500;
+        }
+        if (uiController != null)
+        {
+            uiController.ShowWinMessage();
         }
     }
 

@@ -71,6 +71,7 @@
     <Compile Include="Assets\UnityTechnologies\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\Scripts\Sniper_Bullet.cs" />
     <Compile Include="Assets\Scripts\Pedestrian.cs" />
+    <Compile Include="Assets\Scripts\WinController.cs" />
     <Compile Include="Assets\HQ Explosions Pack FREE\Scripts\changeEffects.cs" />
     <Compile Include="Assets\UnityTechnologies\EffectExamples\Shared\Scripts\GunAim.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />

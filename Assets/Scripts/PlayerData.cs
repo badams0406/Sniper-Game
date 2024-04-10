@@ -8,7 +8,7 @@ public class PlayerData
 {
     public bool boughtSuppressor;
     public bool boughtExtendedMag;
-    public bool boughtLaserAttach; 
+    public bool boughtLaserAttach;
     public PlayerData (Player player)
     {
         boughtSuppressor = player.boughtSuppressor1;
