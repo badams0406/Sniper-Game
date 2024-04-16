@@ -6,6 +6,8 @@ public class Pedestrian : MonoBehaviour
 {
 
     float speed = 0.01f;
+    public UIController uiController;
+    public MoneyHUD MoneyHUD;
 
     Vector3 destination;
 
@@ -15,6 +17,15 @@ public class Pedestrian : MonoBehaviour
         // Set position of pedestrian to a random position within the room
         destination = findRandomFloorPositionInRoom(transform.parent.gameObject, transform.position.y);
         transform.position = destination;
+        if (MoneyHUD == null)
+        {
+            // Try to find the MoneyHUD component in the scene if not assigned
+            MoneyHUD = FindObjectOfType<MoneyHUD>();
+        }
+        if (uiController == null)
+        {
+            uiController = FindObjectOfType<UIController>();
+        }
     }
 
     // Update is called once per frame
@@ -29,6 +40,14 @@ public class Pedestrian : MonoBehaviour
 
     public void onHit () {
         Destroy(gameObject);
+        if (MoneyHUD != null)
+        {
+            MoneyHUD.Balance -= 500;
+        }
+        if (uiController != null)
+        {
+            uiController.ShowLoseMessage();
+        }
     }
 
     Vector3 findRandomFloorPositionInRoom (GameObject room, float y) {

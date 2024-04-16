@@ -7,7 +7,6 @@ public class EnemyController : MonoBehaviour
     public MoneyHUD MoneyHUD;
     public BoxCollider[] rooms;
     public UIController uiController;
-    //public AudioSource krabsWalk;
 
     Vector3 destination;
 
@@ -28,8 +27,6 @@ public class EnemyController : MonoBehaviour
         {
             uiController = FindObjectOfType<UIController>();
         }
-
-        //krabsWalk.Play();
     }
 
     public void Update()
@@ -41,7 +38,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, destination, 0.015f);
+            transform.position = Vector3.MoveTowards(transform.position, destination, 0.025f);
         }
 
         TakeDamage();
