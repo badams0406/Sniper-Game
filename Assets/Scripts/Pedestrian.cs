@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pedestrian : MonoBehaviour
 {
 
-    float speed = 0.01f;
+    public float speed = 0.01f;
     public UIController uiController;
     public MoneyHUD MoneyHUD;
 
@@ -31,14 +31,18 @@ public class Pedestrian : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, destination) < 0.1) {
+        if (Vector3.Distance(transform.position, destination) < 0.1)
+        {
             destination = findRandomFloorPositionInRoom(transform.parent.gameObject, transform.position.y);
-        } else {
+        }
+        else
+        {
             transform.position = Vector3.MoveTowards(transform.position, destination, speed);
         }
     }
 
-    public void onHit () {
+    public void onHit()
+    {
         Destroy(gameObject);
         if (MoneyHUD != null)
         {
@@ -50,13 +54,14 @@ public class Pedestrian : MonoBehaviour
         }
     }
 
-    Vector3 findRandomFloorPositionInRoom (GameObject room, float y) {
+    Vector3 findRandomFloorPositionInRoom(GameObject room, float y)
+    {
         Vector3 pos = room.transform.position;
         Vector3 size = room.GetComponent<BoxCollider>().size;
 
         Vector3 newPos = new Vector3(
-            Random.Range(pos.x - size.x / 2, pos.x + size.x / 2), 
-            y, 
+            Random.Range(pos.x - size.x / 2, pos.x + size.x / 2),
+            y,
             Random.Range(pos.z - size.z / 2, pos.z + size.z / 2)
         );
 

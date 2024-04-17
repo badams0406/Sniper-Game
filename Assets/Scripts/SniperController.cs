@@ -109,8 +109,17 @@ public class SniperController : MonoBehaviour
                     {
                         if (Input.GetKeyDown(KeyCode.Mouse0))
                         {
+                            // Update speed of pedestrians
+                            Pedestrian[] pedestrians = FindObjectsOfType<Pedestrian>();
+
+
+                            foreach (Pedestrian pedestrian in pedestrians)
+                            {
+                                pedestrian.speed = 0.05f;
+                            }
+
                             Debug.Log(hit.transform.gameObject.name);
-                            
+
                             sniper_shot.Play();
                             ammo -= 1;
                             UIBullets[ammo].enabled = false;
@@ -131,7 +140,7 @@ public class SniperController : MonoBehaviour
                             {
                                 // If the ray doesn't hit an enemy, instantiate a bullet impact effect
                                 Instantiate(bulletImpactPrefab, hit.point, Quaternion.identity);
-                                
+
                             }
                         }
                     }
@@ -166,9 +175,11 @@ public class SniperController : MonoBehaviour
         }
     }
 
-    public void resetBulletCountUI(){
+    public void resetBulletCountUI()
+    {
         int ammo = Extendo ? 10 : 5;
-        for(int i = 0; i < ammo; i++){
+        for (int i = 0; i < ammo; i++)
+        {
             UIBullets[i].enabled = true;
         }
     }
