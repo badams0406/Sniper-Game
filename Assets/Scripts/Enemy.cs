@@ -38,7 +38,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
-            transform.position = Vector3.MoveTowards(transform.position, destination, 0.025f);
+            transform.position = Vector3.MoveTowards(transform.position, destination, 0.15f);
         }
 
         TakeDamage();

@@ -90,7 +90,7 @@ public class Player : MonoBehaviour
     }
     public void BuySuppressor()
     {
-        int suppressorCost = 6000; // Set suppressor cost
+        int suppressorCost = 3000; // Set suppressor cost
         if (!PurchaseManagerStatic.suppressorPurchased && moneyHUD.Balance >= suppressorCost)
         {
             moneyHUD.Balance -= suppressorCost;
@@ -113,7 +113,7 @@ public class Player : MonoBehaviour
 
     public void BuyExtendedMag()
     {
-        int extendedMagCost = 4000; // Set extended mag cost
+        int extendedMagCost = 2500; // Set extended mag cost
         if (!PurchaseManagerStatic.extendedMagPurchased && moneyHUD.Balance >= extendedMagCost)
         {
             moneyHUD.Balance -= extendedMagCost;

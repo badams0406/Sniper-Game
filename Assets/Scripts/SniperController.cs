@@ -28,7 +28,21 @@ public class SniperController : MonoBehaviour
     public int ammo;
     float rotationX = 0;
     float rotationY = 0;
-    // public GameObject Line; 
+
+    public float recoilAmount = 10f;  // Smaller, more controlled recoil
+    public float recoilRecoverySpeed = 2f;  // Fast recovery to initial position
+
+    private float currentRecoil = 0f;  // Current applied recoil that needs to be recovered
+    private float recoilImpact = 0f;
+
+    public float minRecoilAmount = 1f;  // Min recoil amount
+    public float maxRecoilAmount = 3f;  // Max recoil amount
+
+    public float minHorizontalRecoil = -2f;
+    public float maxHorizontalRecoil = 2f;
+    private float horizontalRecoilImpact = 0f;
+
+
     public LineRenderer leLine;
     public void Start()
     {
@@ -64,7 +78,6 @@ public class SniperController : MonoBehaviour
         {
             if (Laser == true)
             {
-                //leLine.enabled = true;
                 leLine.gameObject.SetActive(true);
             }
             else
@@ -78,16 +91,47 @@ public class SniperController : MonoBehaviour
         }
         resetBulletCountUI();
     }
-
-    public void Update()
+    void Update()
     {
-        // Character Rotation/Character Movement
-        rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
-        rotationY += Input.GetAxis("Mouse X") * lookSpeed;
+        float mouseY = -Input.GetAxis("Mouse Y") * lookSpeed;
+        float mouseX = Input.GetAxis("Mouse X") * lookSpeed;
 
+        rotationX += mouseY;  // Apply vertical mouse movement (pitch)
+        rotationY += mouseX;  // Apply horizontal mouse movement (yaw)
+
+        // Apply immediate horizontal recoil impact to yaw
+        rotationY += horizontalRecoilImpact;
+        horizontalRecoilImpact = 0; // Reset after applying
+
+        // Manage vertical recoil recovery
+        if (currentRecoil > 0)
+        {
+            float recoveryAmount = Time.deltaTime * recoilRecoverySpeed;
+            currentRecoil -= recoveryAmount;
+            rotationX += Mathf.Min(recoveryAmount, currentRecoil);  // Recover vertical recoil
+        }
+
+        // Clamp the angles to prevent excessive rotation
         rotationX = Mathf.Clamp(rotationX, -lookXLimiter, lookXLimiter);
+        rotationY = Mathf.Clamp(rotationY, -360, 360); // Optionally clamp rotationY if needed
+
         playerCamera.transform.localRotation = Quaternion.Euler(rotationX, rotationY, 0);
+
         gunFunction();
+    }
+
+    private void ApplyRecoil()
+    {
+        if (ammo >= 1)
+        {
+            float randomRecoil = Random.Range(minRecoilAmount, maxRecoilAmount);
+            float randomHorizontalRecoil = Random.Range(minHorizontalRecoil, maxHorizontalRecoil);
+
+            currentRecoil += randomRecoil;          // Update the total vertical recoil
+            recoilImpact += randomRecoil;           // Immediate vertical recoil effect
+
+            horizontalRecoilImpact += randomHorizontalRecoil;  // Immediate horizontal recoil effect
+        }
     }
 
     public void gunFunction()
@@ -123,6 +167,7 @@ public class SniperController : MonoBehaviour
                             sniper_shot.Play();
                             ammo -= 1;
                             UIBullets[ammo].enabled = false;
+                            ApplyRecoil();
                             if (hit.transform.gameObject.tag == "Enemy")
                             {
                                 // If the ray hits an enemy, decrease its health

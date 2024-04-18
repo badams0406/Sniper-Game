@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pedestrian : MonoBehaviour
 {
 
-    public float speed = 0.01f;
+    public float speed = 30f;
     public UIController uiController;
     public MoneyHUD MoneyHUD;
 
