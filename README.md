@@ -1,3 +1,5 @@
+Scripts can be found in Assets/Scripts
+
 Directions:
 You will implement a sniper game. The game can be mobile or desktop application. You can
 also make it a web application. The sniper will be stable, won’t move but hiding in a spot
